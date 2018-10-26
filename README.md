@@ -1,2 +1,3 @@
-# vim-ttcn
-TTCN-3 development plugin for Vim
+# Vim TTCN-3
+
+Syntax file for TTCN-3
