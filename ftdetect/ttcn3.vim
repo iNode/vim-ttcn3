@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.{ttcn3,ttcn3} setfiletype ttcn3
+autocmd BufNewFile,BufRead *.{ttcn,ttcn3} setfiletype ttcn3
