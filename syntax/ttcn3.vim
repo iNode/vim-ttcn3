@@ -2,8 +2,7 @@ if exists("g:ttcn3_fold") && g:ttcn3_fold == 1
   syn region ttcn3Fold start="{" end="}" transparent fold
 endif
 
-syntax keyword ttcn3Keywords
-    / alive
+syntax keyword ttcn3Keywords alive
     / all
     / alt
     / altstep
@@ -97,8 +96,7 @@ syn match ttcn3Keywords  "\<friend\s\+module\>"
 
 
 " Predefined types
-syntax keyword ttcn3Types
-    / address
+syntax keyword ttcn3Types address
     / anytype
     / bitstring
     / boolean
@@ -114,8 +112,7 @@ syn match ttcn3Error "\<universal\>"
 syn match ttcn3Types "\<universal\s\+char\(string\)\?\>"
 
 " Operators
-syntax keyword ttcn3Operators
-    / and
+syntax keyword ttcn3Operators and
     / and4b
     / mod
     / not
@@ -138,8 +135,8 @@ syn match   ttcn3Operators    ":="
 
 
 " Functions
-syntax keyword ttcn3Functions
-    / action
+" syntax keyword ttcn3Functions action
+syntax keyword ttcn3Functions action
     / activate
     / any2unistr
     / apply
