@@ -3,90 +3,90 @@ if exists("g:ttcn3_fold") && g:ttcn3_fold == 1
 endif
 
 syntax keyword ttcn3Keywords alive
-    / all
-    / alt
-    / altstep
-    / break
-    / case
-    / complement
-    / component
-    / const
-    / continue
-    / control
-    / default
-    / display
-    / do
-    / else
-    / encode
-    / enumerated
-    / error
-    / except
-    / exception
-    / extends
-    / extension
-    / external
-    / for
-    / friend
-    / from
-    / function
-    / goto
-    / group
-    / if
-    / ifpresent
-    / import
-    / in
-    / inout
-    / interleave
-    / label
-    / language
-    / length
-    / message
-    / mixed
-    / modifies
-    / module
-    / modulepar
-    / mtc
-    / noblock
-    / nowait
-    / of
-    / optional
-    / or
-    / or4b
-    / out
-    / override
-    / param
-    / pattern
-    / permutation
-    / port
-    / present
-    / private
-    / procedure
-    / public
-    / realtime
-    / record
-    / recursive
-    / repeat
-    / return
-    / select
-    / self
-    / sender
-    / set
-    / signature
-    / subset
-    / superset
-    / system
-    / template
-    / testcase
-    / timeout
-    / timestamp
-    / to
-    / type
-    / union
-    / value
-    / var
-    / variant
-    / while
-    / with
+syntax keyword ttcn3Keywords all
+syntax keyword ttcn3Keywords alt
+syntax keyword ttcn3Keywords altstep
+syntax keyword ttcn3Keywords break
+syntax keyword ttcn3Keywords case
+syntax keyword ttcn3Keywords complement
+syntax keyword ttcn3Keywords component
+syntax keyword ttcn3Keywords const
+syntax keyword ttcn3Keywords continue
+syntax keyword ttcn3Keywords control
+syntax keyword ttcn3Keywords default
+syntax keyword ttcn3Keywords display
+syntax keyword ttcn3Keywords do
+syntax keyword ttcn3Keywords else
+syntax keyword ttcn3Keywords encode
+syntax keyword ttcn3Keywords enumerated
+syntax keyword ttcn3Keywords error
+syntax keyword ttcn3Keywords except
+syntax keyword ttcn3Keywords exception
+syntax keyword ttcn3Keywords extends
+syntax keyword ttcn3Keywords extension
+syntax keyword ttcn3Keywords external
+syntax keyword ttcn3Keywords for
+syntax keyword ttcn3Keywords friend
+syntax keyword ttcn3Keywords from
+syntax keyword ttcn3Keywords function
+syntax keyword ttcn3Keywords goto
+syntax keyword ttcn3Keywords group
+syntax keyword ttcn3Keywords if
+syntax keyword ttcn3Keywords ifpresent
+syntax keyword ttcn3Keywords import
+syntax keyword ttcn3Keywords in
+syntax keyword ttcn3Keywords inout
+syntax keyword ttcn3Keywords interleave
+syntax keyword ttcn3Keywords label
+syntax keyword ttcn3Keywords language
+syntax keyword ttcn3Keywords length
+syntax keyword ttcn3Keywords message
+syntax keyword ttcn3Keywords mixed
+syntax keyword ttcn3Keywords modifies
+syntax keyword ttcn3Keywords module
+syntax keyword ttcn3Keywords modulepar
+syntax keyword ttcn3Keywords mtc
+syntax keyword ttcn3Keywords noblock
+syntax keyword ttcn3Keywords nowait
+syntax keyword ttcn3Keywords of
+syntax keyword ttcn3Keywords optional
+syntax keyword ttcn3Keywords or
+syntax keyword ttcn3Keywords or4b
+syntax keyword ttcn3Keywords out
+syntax keyword ttcn3Keywords override
+syntax keyword ttcn3Keywords param
+syntax keyword ttcn3Keywords pattern
+syntax keyword ttcn3Keywords permutation
+syntax keyword ttcn3Keywords port
+syntax keyword ttcn3Keywords present
+syntax keyword ttcn3Keywords private
+syntax keyword ttcn3Keywords procedure
+syntax keyword ttcn3Keywords public
+syntax keyword ttcn3Keywords realtime
+syntax keyword ttcn3Keywords record
+syntax keyword ttcn3Keywords recursive
+syntax keyword ttcn3Keywords repeat
+syntax keyword ttcn3Keywords return
+syntax keyword ttcn3Keywords select
+syntax keyword ttcn3Keywords self
+syntax keyword ttcn3Keywords sender
+syntax keyword ttcn3Keywords set
+syntax keyword ttcn3Keywords signature
+syntax keyword ttcn3Keywords subset
+syntax keyword ttcn3Keywords superset
+syntax keyword ttcn3Keywords system
+syntax keyword ttcn3Keywords template
+syntax keyword ttcn3Keywords testcase
+syntax keyword ttcn3Keywords timeout
+syntax keyword ttcn3Keywords timestamp
+syntax keyword ttcn3Keywords to
+syntax keyword ttcn3Keywords type
+syntax keyword ttcn3Keywords union
+syntax keyword ttcn3Keywords value
+syntax keyword ttcn3Keywords var
+syntax keyword ttcn3Keywords variant
+syntax keyword ttcn3Keywords while
+syntax keyword ttcn3Keywords with
 
 syn match ttcn3Error "\<runs\>"
 syn match ttcn3Error "\<on\>"
@@ -97,29 +97,29 @@ syn match ttcn3Keywords  "\<friend\s\+module\>"
 
 " Predefined types
 syntax keyword ttcn3Types address
-    / anytype
-    / bitstring
-    / boolean
-    / charstring
-    / float
-    / hexstring
-    / integer
-    / octetstring
-    / timer
-    / verdicttype
+syntax keyword ttcn3Types anytype
+syntax keyword ttcn3Types bitstring
+syntax keyword ttcn3Types boolean
+syntax keyword ttcn3Types charstring
+syntax keyword ttcn3Types float
+syntax keyword ttcn3Types hexstring
+syntax keyword ttcn3Types integer
+syntax keyword ttcn3Types octetstring
+syntax keyword ttcn3Types timer
+syntax keyword ttcn3Types verdicttype
 
 syn match ttcn3Error "\<universal\>"
 syn match ttcn3Types "\<universal\s\+char\(string\)\?\>"
 
 " Operators
 syntax keyword ttcn3Operators and
-    / and4b
-    / mod
-    / not
-    / not4b
-    / rem
-    / xor
-    / xor4b
+syntax keyword ttcn3Operators and4b
+syntax keyword ttcn3Operators mod
+syntax keyword ttcn3Operators not
+syntax keyword ttcn3Operators not4b
+syntax keyword ttcn3Operators rem
+syntax keyword ttcn3Operators xor
+syntax keyword ttcn3Operators xor4b
 
 syn match   ttcn3Operators    "[-+*/?]"
 syn match   ttcn3Operators    "[<>]"
@@ -137,76 +137,76 @@ syn match   ttcn3Operators    ":="
 " Functions
 " syntax keyword ttcn3Functions action
 syntax keyword ttcn3Functions action
-    / activate
-    / any2unistr
-    / apply
-    / bit2hex
-    / bit2int
-    / bit2oct
-    / bit2str
-    / call
-    / catch
-    / char
-    / char2int
-    / char2oct
-    / check
-    / clear
-    / connect
-    / create
-    / deactivate
-    / decmatch
-    / disconnect
-    / done
-    / enum2int
-    / execute
-    / float2int
-    / float2int
-    / getcall
-    / getreply
-    / getverdict
-    / halt
-    / hex2bit
-    / hex2int
-    / hex2oct
-    / hex2str
-    / int2bit
-    / int2char
-    / int2enum
-    / int2float
-    / int2hex
-    / int2oct
-    / int2str
-    / int2unichar
-    / kill
-    / killed
-    / log
-    / map
-    / match
-    / oct2bit
-    / oct2char
-    / oct2hex
-    / oct2int
-    / oct2str
-    / oct2unichar
-    / raise
-    / read
-    / receive
-    / reply
-    / running
-    / send
-    / setverdict
-    / start
-    / stop
-    / str2float
-    / str2hex
-    / str2int
-    / str2oct
-    / trigger
-    / unichar2int
-    / unichar2oct
-    / unmap
-    / valueof
-    / wait
+syntax keyword ttcn3Functions activate
+syntax keyword ttcn3Functions any2unistr
+syntax keyword ttcn3Functions apply
+syntax keyword ttcn3Functions bit2hex
+syntax keyword ttcn3Functions bit2int
+syntax keyword ttcn3Functions bit2oct
+syntax keyword ttcn3Functions bit2str
+syntax keyword ttcn3Functions call
+syntax keyword ttcn3Functions catch
+syntax keyword ttcn3Functions char
+syntax keyword ttcn3Functions char2int
+syntax keyword ttcn3Functions char2oct
+syntax keyword ttcn3Functions check
+syntax keyword ttcn3Functions clear
+syntax keyword ttcn3Functions connect
+syntax keyword ttcn3Functions create
+syntax keyword ttcn3Functions deactivate
+syntax keyword ttcn3Functions decmatch
+syntax keyword ttcn3Functions disconnect
+syntax keyword ttcn3Functions done
+syntax keyword ttcn3Functions enum2int
+syntax keyword ttcn3Functions execute
+syntax keyword ttcn3Functions float2int
+syntax keyword ttcn3Functions float2int
+syntax keyword ttcn3Functions getcall
+syntax keyword ttcn3Functions getreply
+syntax keyword ttcn3Functions getverdict
+syntax keyword ttcn3Functions halt
+syntax keyword ttcn3Functions hex2bit
+syntax keyword ttcn3Functions hex2int
+syntax keyword ttcn3Functions hex2oct
+syntax keyword ttcn3Functions hex2str
+syntax keyword ttcn3Functions int2bit
+syntax keyword ttcn3Functions int2char
+syntax keyword ttcn3Functions int2enum
+syntax keyword ttcn3Functions int2float
+syntax keyword ttcn3Functions int2hex
+syntax keyword ttcn3Functions int2oct
+syntax keyword ttcn3Functions int2str
+syntax keyword ttcn3Functions int2unichar
+syntax keyword ttcn3Functions kill
+syntax keyword ttcn3Functions killed
+syntax keyword ttcn3Functions log
+syntax keyword ttcn3Functions map
+syntax keyword ttcn3Functions match
+syntax keyword ttcn3Functions oct2bit
+syntax keyword ttcn3Functions oct2char
+syntax keyword ttcn3Functions oct2hex
+syntax keyword ttcn3Functions oct2int
+syntax keyword ttcn3Functions oct2str
+syntax keyword ttcn3Functions oct2unichar
+syntax keyword ttcn3Functions raise
+syntax keyword ttcn3Functions read
+syntax keyword ttcn3Functions receive
+syntax keyword ttcn3Functions reply
+syntax keyword ttcn3Functions running
+syntax keyword ttcn3Functions send
+syntax keyword ttcn3Functions setverdict
+syntax keyword ttcn3Functions start
+syntax keyword ttcn3Functions stop
+syntax keyword ttcn3Functions str2float
+syntax keyword ttcn3Functions str2hex
+syntax keyword ttcn3Functions str2int
+syntax keyword ttcn3Functions str2oct
+syntax keyword ttcn3Functions trigger
+syntax keyword ttcn3Functions unichar2int
+syntax keyword ttcn3Functions unichar2oct
+syntax keyword ttcn3Functions unmap
+syntax keyword ttcn3Functions valueof
+syntax keyword ttcn3Functions wait
 
 syn match ttcn3Error "\<any\>"
 syn match ttcn3Functions "\<\(any\|all\)\s\+\(from\|component\|port\|timer\)\?\>"
